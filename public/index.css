@@ -1,0 +1,135 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+}
+
+.container{
+    width: 90%;
+    max-width: 850px;
+    padding: 0 1rem;
+    margin: 1rem auto;
+}
+
+header{
+    padding: 1rem 0;
+    position: relative;
+    height: 8%;
+    margin: auto auto;
+    box-shadow: 0 .1px 10px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.title p{
+    padding: .1rem;
+    font-size: 1.4rem;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px 1px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.space p{
+    font-size: 1.2rem;
+    line-height: 136%;
+}
+
+.space h3{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 60%;
+    position: relative;
+    z-index: 99;
+}
+
+.space h3::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    max-width: 400px;
+    height: 10vh;
+    background: rgba(236, 143, 56, 0.651);
+    top: 0%;
+    z-index: -1;
+    left: -10%;
+    border-radius: 0 0rem 5rem 0;
+}
+
+.space nav{
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    line-height: 136%;
+}
+
+main section li::marker{
+    font-size: 1.4rem;
+    color: rgb(212, 18, 18);
+    width: 1rem;
+    height: 1rem;
+    background-color: aqua;
+}
+
+main section code{
+    background-color: rgba(207, 207, 207, 0.418);
+    padding: .1rem .4rem;
+    line-height: 136%;
+    border-radius: .2rem;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main section img{
+    width: 100%;
+    padding: 1rem;
+}
+
+footer{
+    text-align: center;
+    padding: 3rem;
+}
+
+footer > p{
+    padding: 1rem auto;
+}
+
+small{
+    margin: 1rem;
+}
+
+@media (min-width: 900px) {
+   .container{
+       width: 100%;
+       display: flex;
+       flex-direction: row;
+       padding: 2rem;
+   }
+
+   .container:nth-child(even){
+       flex-direction: row-reverse;
+    }
+    
+    section div img{
+        width: 24rem;
+        object-fit: contain;
+        z-index: 99;
+   }
+
+   .space p, nav{
+    width: 90%;
+   }
+
+   footer p {
+       margin: .3rem auto;
+       font-size: 1.4rem;
+   }
+}
