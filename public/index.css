@@ -57,7 +57,7 @@ main section{
     content: "";
     width: 100%;
     max-width: 400px;
-    height: 2.4vh;
+    height: 4vh;
     background: rgba(236, 143, 56, 0.651);
     top: 18%;
     z-index: -1;
