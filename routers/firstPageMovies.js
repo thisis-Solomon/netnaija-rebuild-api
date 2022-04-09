@@ -7,7 +7,7 @@ const apicache = require("apicache")
 const router = express.Router()
 const caches = apicache.middleware
 
-router.get("/",caches("30 minutes"), async (req, res) => {
+router.get("/movies",caches("30 minutes"), async (req, res) => {
     await getMovies("https://www.thenetnaija.co/videos/movies", movies)
     try {
         const filteredData = movies.filter((val, index, arr) => index > arr.length - 19)
