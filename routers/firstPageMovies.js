@@ -13,7 +13,7 @@ router.get("/",caches("30 minutes"), async (req, res) => {
         const filteredData = movies.filter((val, index, arr) => index > arr.length - 19)
         const filteredMovie = {
             count: filteredData.length,
-            _movies: moviesDetails(filteredData, "http://localhost:3002/api/movie/")
+            _movies: moviesDetails(filteredData, "https://netnaijarebuildapi.herokuapp.com/api/movie/")
         }
 
         res.status(200).json(filteredMovie)

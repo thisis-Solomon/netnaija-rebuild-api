@@ -14,9 +14,9 @@ async function storyLine(movieLink, movie_data){
     const genre = $(".video-entry article").find("p").eq(3).text()
     const release_date = $(".video-entry article").find("p").eq(4).text()
     const stars = $(".video-entry article").find("p").eq(5).text()
-    const language = $(".video-entry article").find("p").eq(6).text()
+    const source = $(".video-entry article").find("p").eq(6).text()
     const subtitle_language = $(".video-entry article").find("p").eq(7).text()
-    const source = $(".video-entry article").find("p").eq(8).text()
+    const language = $(".video-entry article").find("p").eq(8).text()
     const imdb = $(".video-entry article").find("p").eq(9).text()
 
     const download_video = $(".video-entry article").find(".db-one a").eq(0).attr("href")

@@ -119,7 +119,7 @@ small{
     }
     
     section div img{
-        width: 24rem;
+        width: 23rem;
         object-fit: contain;
         z-index: 99;
    }

@@ -8,6 +8,7 @@ const path = require("path");
 
 const app = express();
 app.use(express.json())
+app.use(express.static("public"))
 
 const requestLimit = rateLimiter({
     windowMs: 60 * 60 * 1000, //1hour
@@ -19,8 +20,8 @@ const requestLimit = rateLimiter({
 
 const PORT = process.env.PORT || 3002;
 
-app.get("/", (req, res) =>{
-    res.sendFile(path.join(__dirname, "/public/index.html"))
+app.get("/",(req, res) =>{
+    res.sendFile(path.join(__dirname, "/index.html"))
 })
 
 app.use("/api", requestLimit ,firstPageMoviesRouter)
