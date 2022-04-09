@@ -124,7 +124,7 @@ small{
     }
     
     .space h3::after{
-        height: 7vh;
+        height: 10vh;
         top: -24%;
         left: 13%;
     }
