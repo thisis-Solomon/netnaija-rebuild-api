@@ -82,6 +82,7 @@ main section li::marker{
 main section code{
     background-color: rgba(207, 207, 207, 0.418);
     padding: .1rem .4rem;
+    min-width: 4rem;
     line-height: 136%;
     border-radius: .2rem;
     font-size: 1rem;
