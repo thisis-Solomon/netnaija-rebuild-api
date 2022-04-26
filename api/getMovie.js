@@ -22,7 +22,6 @@ async function storyLine(movieLink, movie_data){
     const download_video = $(".video-entry article").find(".db-one a").eq(0).attr("href")
         // const download_subtitle = $(".video-entry article").find(".db-one a").eq(1).attr("href")
     const base_link = "https://www.thenetnaija.co"
-        // https://www.thenetnaija.co/
         // "https://www.thenetnaija.co" + download_subtitle
     const movieData = {
             title,

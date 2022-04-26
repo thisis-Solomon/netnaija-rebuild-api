@@ -1,2 +1,2 @@
-const movies = []
-module.exports = movies
+const movies = [];
+module.exports = movies;
