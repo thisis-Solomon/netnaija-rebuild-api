@@ -1,6 +1,5 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
-const crypto = require("crypto");
 
 async function getMovies(url, moviesData) {
   const res = await axios.get(url);
@@ -18,7 +17,7 @@ async function getMovies(url, moviesData) {
         .attr("title");
 
       const data = {
-        id: crypto.randomBytes(8).toString("base64"),
+        id: Date.now().toString(),
         img,
         title,
         info: {
@@ -26,7 +25,6 @@ async function getMovies(url, moviesData) {
           date,
         },
       };
-
       moviesData.push(data);
     });
   });

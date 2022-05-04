@@ -9,8 +9,10 @@ const router = express.Router();
 router.get("/movie/:id", async (req, res) => {
   await getMovies("https://www.thenetnaija.co/videos/movies", movies);
   const id = req.params.id;
-  const movieID = movies.filter((movie) => movie.id === parseInt(id));
+  console.log(id);
+  const movieID = movies.filter((movie) => movie.id === id);
   const { info: movie_link } = movieID[0];
+  console.log(movies);
   const movie_data = [id];
 
   await storyLine(movie_link.link, movie_data);

@@ -16,7 +16,7 @@ const requestLimit = rateLimiter({
   windowMs: 60 * 60 * 1000, //1hour
   max: 100,
   message:
-    "Too many accounts created from this IP, please try again after an hour",
+    "Too many requi created from this IP, please try again after an hour",
   standardHeaders: true,
   legacyHeaders: false,
 });
