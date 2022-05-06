@@ -5,10 +5,6 @@ function moviesDetails(movies, url) {
       img: movie.img,
       title: movie.title,
       date: movie.info.date,
-      options: {
-        GET: "GET A SINGLE MOVIE",
-        PATH: url + movie.id,
-      },
     };
   });
 
