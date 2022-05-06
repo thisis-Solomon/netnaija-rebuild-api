@@ -30,4 +30,4 @@ app.get("/", (req, res) => {
 app.use("/api", requestLimit, moviesPage);
 app.use("/api", requestLimit, singleMovieRouter);
 
-app.listen(PORT, () => console.log(`server listening at: ${PORT}`));
+app.listen(PORT);

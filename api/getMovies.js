@@ -17,7 +17,7 @@ async function getMovies(url, moviesData) {
         .attr("title");
 
       const data = {
-        id: Date.now().toString(),
+        id: title.replace(/\s/g, "-").toLocaleLowerCase(),
         img,
         title,
         info: {
